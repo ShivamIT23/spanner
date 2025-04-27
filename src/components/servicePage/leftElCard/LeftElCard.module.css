@@ -1,0 +1,207 @@
+.container {
+  width: 100%;
+  padding: 0 2vw;
+}
+.contentWrapper {
+  display: flex;
+  gap: 3vw;
+  width: 100%;
+}
+.left {
+  width: 60%;
+}
+.right {
+  width: 40%;
+}
+.elImage {
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+.title {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.1vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 3vw;
+}
+
+.leftContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.para {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.para2 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 4; /* default 4 lines */
+  -webkit-line-clamp: 4;
+}
+.pointerContainer {
+  padding-left: 2vw;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.feature {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.3vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.tableContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3vw;
+}
+.tableImage {
+  width: 85%;
+}
+@media only screen and (max-width: 640px) {
+  .left {
+    width: 40%;
+  }
+  .right {
+    width: 60%;
+  }
+  .para2 {
+    -webkit-line-clamp: 2;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    padding: 0 2vw;
+  }
+  .contentWrapper {
+    gap: 3vw;
+  }
+
+  .title {
+    font-size: 3.1vw;
+    margin-bottom: 2vw;
+  }
+
+  .leftContentContainer {
+    gap: 1.6vw;
+  }
+  .para {
+    font-size: 1.4vw;
+  }
+  .para2 {
+    font-size: 1.4vw;
+  }
+  .feature {
+    font-size: 1.8vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .tableContainer {
+    margin-top: 3vw;
+  }
+  .tableImage {
+    width: 80%;
+  }
+  .pointerContainer {
+    padding-left: 1.5vw;
+    font-size: 1.2vw;
+    gap: 0.5vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 2vw;
+    gap: 3vw;
+  }
+
+  .title {
+    font-size: 3.1vw;
+    margin-bottom: 1.8vw;
+  }
+
+  .leftContentContainer {
+    gap: 1.4vw;
+  }
+  .para {
+    font-size: 1.2vw;
+  }
+  .para2 {
+    font-size: 1.2vw;
+  }
+  .feature {
+    font-size: 1.5vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .container {
+    padding: 0 3.4vw;
+  }
+  .contentWrapper {
+    gap: 1.8vw;
+  }
+  .title {
+    font-size: 2.5vw;
+    margin-bottom: 1.8vw;
+  }
+
+  .leftContentContainer {
+    gap: 1.4vw;
+  }
+  .para {
+    font-size: 1.1vw;
+  }
+  .para2 {
+    font-size: 1.1vw;
+  }
+  .pointerContainer {
+    padding-left: 1.5vw;
+    font-size: 1.1vw;
+    gap: 1vw;
+  }
+  .feature {
+    font-size: 1.3vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

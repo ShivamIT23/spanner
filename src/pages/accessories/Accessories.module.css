@@ -1,0 +1,140 @@
+.container {
+  background: #fff;
+  position: relative;
+
+  /* background-image: url("/images/accBg.png"); */
+}
+.mainContentContainer {
+  position: relative;
+  padding: 5vw 3vw;
+}
+.otherContainer {
+  position: relative;
+  overflow: hidden;
+}
+.bgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: difference;
+  position: absolute;
+  object-position: top;
+  top: 0;
+  left: 0;
+}
+.imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.otherbgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: difference;
+  object-position: bottom;
+}
+.header {
+  color: #c45f5f;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3vw;
+}
+.paraContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.para {
+  color: #c45f5f;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 150% */
+  font-size: 1rem;
+}
+.para2 {
+  color: #c45f5f;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 150% */
+  font-size: 1rem;
+}
+.sectionTwo {
+  position: relative;
+}
+
+@media only screen and (max-width: 645px) {
+  .para2{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .para {
+    font-size: 1.8vw;
+    width: 90%;
+  }
+  .para2 {
+    font-size: 1.8vw;
+    width: 90%;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .para {
+    font-size: 1.6vw;
+    width: 85%;
+  }
+  .para2 {
+    font-size: 1.6vw;
+    width: 85%;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .header {
+    font-size: 3.8vw;
+    margin-bottom: 3vw;
+  }
+  .para {
+    font-size: 1.4vw;
+    width: 85%;
+  }
+  .para2 {
+    font-size: 1.4vw;
+    width: 85%;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .para {
+    font-size: 1.2vw;
+    width: 85%;
+  }
+  .para2 {
+    font-size: 1.2vw;
+    width: 85%;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

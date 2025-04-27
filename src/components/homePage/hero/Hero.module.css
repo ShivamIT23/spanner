@@ -1,0 +1,239 @@
+.container {
+  height: var(--homepage-hero-section-height);
+  width: 100%;
+  background-color: antiquewhite;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.imageContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.bgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.mainContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(2, 2, 2, 0) 0%, #030303 50.22%);
+  padding: 10vw 5vw;
+}
+.contentWrapper {
+  border-radius: 2.5vw;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    104deg,
+    rgba(255, 255, 255, 0.46) 0.4%,
+    rgba(153, 153, 153, 0) 100%
+  );
+  backdrop-filter: blur(10px);
+  padding: 3vw;
+  width: 65%;
+}
+.header {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 700;
+}
+.midContentContainer {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+}
+.midContent {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.midContentCircle {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.contactLink {
+  color: #404040;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 600;
+  border-radius: 1.7vw;
+  padding: 1vw 1.4vw;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .contentWrapper {
+    border-radius: 2.5vw;
+    padding: 3vw;
+    padding-bottom: 5vw;
+    width: 65%;
+  }
+  .header {
+    font-size: 2.2vw;
+  }
+  .midContentContainer {
+    gap: 1vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .midContent {
+    font-size: 1.65vw;
+    font-weight: 500;
+  }
+  .midContentCircle {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+  }
+  .contactLink {
+    font-size: 1.8vw;
+    border-radius: 1.7vw;
+    padding: 1vw 1.4vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .mainContainer {
+    background: linear-gradient(270deg, rgba(2, 2, 2, 0) 0%, #030303 60.22%);
+    padding: 13vw 0 0 5vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    background: linear-gradient(270deg, rgba(2, 2, 2, 0) 0%, #030303 60.22%);
+    padding: 13vw 0 0 7vw;
+  }
+  .contentWrapper {
+    border-radius: 2.5vw;
+    padding: 3vw;
+    padding-bottom: 5vw;
+    width: 55%;
+  }
+  .header {
+    font-size: 2vw;
+  }
+  .midContentContainer {
+    gap: 1vw;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+  }
+  .midContent {
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+  .midContentCircle {
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+  }
+  .contactLink {
+    font-size: 1.4vw;
+    border-radius: 1.7vw;
+    padding: 1vw 1.4vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .mainContainer {
+    background: linear-gradient(270deg, rgba(2, 2, 2, 0) 0%, #030303 60.22%);
+    padding: 9vw 0 0 6vw;
+  }
+  .contentWrapper {
+    border-radius: 2.5vw;
+    padding: 3vw;
+    padding-bottom: 5vw;
+    width: 55%;
+  }
+  .header {
+    font-size: 2vw;
+  }
+  .midContentContainer {
+    gap: 1vw;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+  }
+  .midContent {
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+  .midContentCircle {
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+  }
+  .contactLink {
+    font-size: 1.4vw;
+    border-radius: 1.7vw;
+    padding: 1vw 1.4vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .mainContainer {
+    background: linear-gradient(270deg, rgba(2, 2, 2, 0) 0%, #030303 60.22%);
+    padding: 8vw 0 0 6vw;
+  }
+  .contentWrapper {
+    border-radius: 2.5vw;
+    padding: 3vw;
+    padding-bottom: 5vw;
+    width: 55%;
+  }
+  .header {
+    font-size: 2vw;
+  }
+  .midContentContainer {
+    gap: 1vw;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+  }
+  .midContent {
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+  .midContentCircle {
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+  }
+  .contactLink {
+    font-size: 1.4vw;
+    border-radius: 1.7vw;
+    padding: 1vw 1.4vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .mainContainer {
+    background: linear-gradient(270deg, rgba(2, 2, 2, 0) 0%, #030303 50.22%);
+    padding: 8vw 0 0 6vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

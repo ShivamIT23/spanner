@@ -1,0 +1,163 @@
+:root {
+  --testimonial-card-height: 37vw;
+}
+.container {
+  background: url("/images/tesibg.png") lightgray 50% / cover no-repeat;
+
+  padding: 7vw 3vw;
+}
+.header {
+  color: #c45f5f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  top: 6vw;
+  left: -6vw;
+  rotate: -90deg;
+}
+.sliderWrapper {
+  width: 100%;
+  height: var(--testimonial-card-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.sliderInnerWrapper {
+  width: 80%;
+}
+.slider {
+  height: var(--testimonial-card-height) !important;
+}
+.cardWrapper {
+  width: 100%;
+  height: var(--testimonial-card-height);
+}
+.card {
+  width: 100%;
+  height: var(--testimonial-card-height);
+  /* height: 100%; */
+  display: flex;
+}
+.cardImage {
+  width: 40%;
+  height: 100%;
+  height: var(--testimonial-card-height);
+  object-fit: cover;
+  display: block;
+}
+.cardRight {
+  width: 60%;
+  display: flex;
+  height: var(--testimonial-card-height);
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2vw;
+}
+.contentContainer {
+  width: 100%;
+  background: #c45f5f;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.12);
+  padding: 1.7vw;
+}
+.custName {
+  color: #c45f5f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 2vw;
+}
+.content {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.dquote {
+  color: #fff;
+  font-family: "Rockwell Extra Bold", sans-serif;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.larw,
+.rarw {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  background-color: black;
+  padding: 0.6vw 0;
+  width: calc(10%);
+}
+.larw {
+  left: 0;
+}
+.rarw {
+  right: 0;
+}
+.arw {
+  width: 4vw;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .header {
+    font-size: 2.5vw;
+    top: 6.5vw;
+    left: -6vw;
+    rotate: -90deg;
+  }
+  .larw,
+  .rarw {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    background-color: black;
+    padding: 0.6vw 0;
+    height: 8vw;
+    width: calc(10%);
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .content {
+    font-size: 1.2vw;
+  }
+  .dquote {
+    font-size: 4.5vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

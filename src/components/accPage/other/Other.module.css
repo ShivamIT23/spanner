@@ -1,0 +1,285 @@
+.container {
+  padding: 5vw 3vw;
+}
+.header {
+  color: #c45f5f;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 1.6rem;
+  margin-bottom: 3vw;
+  text-align: center;
+}
+.cardImage {
+  width: 20vw;
+}
+.cardHeader {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.8vw;
+}
+.cardsContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(45%, 45%));
+  justify-content: space-between;
+  row-gap: 14vw;
+  margin-top: 16vw;
+}
+.card {
+  width: 100%;
+  position: relative;
+  background-color: #c45f5f;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 2vw;
+  padding: 1.5vw 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20vw;
+}
+.cardImage {
+  /* width: 20vw; */
+  position: absolute;
+  bottom: 38%;
+}
+
+.cardImage1 {
+  width: 14vw;
+}
+.cardImage2 {
+  width: 26vw;
+}
+.cardImage3 {
+  width: 24vw;
+}
+.cardImage4 {
+  width: 21vw;
+}
+.cardImage5 {
+  width: 30vw;
+}
+.cardImage6 {
+  width: 21vw;
+}
+.cardImage7 {
+  width: 19vw;
+}
+.cardImage8 {
+  width: 23vw;
+}
+.cardImage9 {
+  width: 21vw;
+}
+
+.cardImage10 {
+  width: 22vw;
+}
+.cardImage11 {
+  width: 22vw;
+}
+.cardImage12 {
+  width: 17vw;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .cardsContainer {
+    grid-template-columns: repeat(3, minmax(30%, 30%));
+    row-gap: 12vw;
+    margin-top: 14vw;
+  }
+  .cardHeader {
+    font-size: 1.8vw;
+  }
+  .card {
+    border-radius: 2vw;
+    padding: 1.5vw 2vw;
+    height: 15vw;
+  }
+  .cardImage {
+    /* width: 20vw; */
+    position: absolute;
+    bottom: 38%;
+  }
+  .cardImage1 {
+    width: 12vw;
+  }
+  .cardImage2 {
+    width: 20vw;
+  }
+  .cardImage3 {
+    width: 20vw;
+  }
+  .cardImage4 {
+    width: 18vw;
+  }
+  .cardImage5 {
+    width: 23vw;
+  }
+  .cardImage6 {
+    width: 18vw;
+  }
+  .cardImage7 {
+    width: 17vw;
+  }
+  .cardImage8 {
+    width: 18vw;
+  }
+  .cardImage9 {
+    width: 18vw;
+  }
+
+  .cardImage10 {
+    width: 18vw;
+  }
+  .cardImage11 {
+    width: 19vw;
+  }
+  .cardImage12 {
+    width: 14vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .container {
+    padding: 5vw 4vw;
+  }
+  .cardsContainer {
+    grid-template-columns: repeat(3, minmax(28.5%, 28.5%));
+    row-gap: 12vw;
+    margin-top: 14vw;
+  }
+  .cardHeader {
+    font-size: 1.4vw;
+  }
+  .card {
+    border-radius: 2vw;
+    padding: 1.5vw 1vw;
+    height: 15vw;
+  }
+  .cardImage {
+    /* width: 20vw; */
+    position: absolute;
+    bottom: 38%;
+  }
+  .cardImage1 {
+    width: 12vw;
+  }
+  .cardImage2 {
+    width: 20vw;
+  }
+  .cardImage3 {
+    width: 20vw;
+  }
+  .cardImage4 {
+    width: 18vw;
+  }
+  .cardImage5 {
+    width: 23vw;
+  }
+  .cardImage6 {
+    width: 18vw;
+  }
+  .cardImage7 {
+    width: 17vw;
+  }
+  .cardImage8 {
+    width: 18vw;
+  }
+  .cardImage9 {
+    width: 18vw;
+  }
+
+  .cardImage10 {
+    width: 18vw;
+  }
+  .cardImage11 {
+    width: 19vw;
+  }
+  .cardImage12 {
+    width: 14vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 5vw 4vw;
+  }
+  .cardsContainer {
+    grid-template-columns: repeat(3, minmax(28.5%, 28.5%));
+    row-gap: 12vw;
+    margin-top: 14vw;
+  }
+  .cardHeader {
+    font-size: 1.4vw;
+  }
+  .card {
+    border-radius: 2vw;
+    padding: 1.5vw 1vw;
+    height: 13vw;
+  }
+  .cardImage {
+    /* width: 20vw; */
+    position: absolute;
+    bottom: 38%;
+  }
+  .cardImage1 {
+    width: 10vw;
+  }
+  .cardImage2 {
+    width: 19vw;
+  }
+  .cardImage3 {
+    width: 17vw;
+  }
+  .cardImage4 {
+    width: 16vw;
+  }
+  .cardImage5 {
+    width: 21vw;
+  }
+  .cardImage6 {
+    width: 16vw;
+  }
+  .cardImage7 {
+    width: 15vw;
+  }
+  .cardImage8 {
+    width: 16vw;
+  }
+  .cardImage9 {
+    width: 16vw;
+  }
+
+  .cardImage10 {
+    width: 16vw;
+  }
+  .cardImage11 {
+    width: 17vw;
+  }
+  .cardImage12 {
+    width: 12vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

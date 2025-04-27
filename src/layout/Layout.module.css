@@ -1,0 +1,73 @@
+:root {
+  --top-Layout-comp-height: 24vh;
+  --side-bars-layout-width: 12vw;
+  --hero-sections-global-height: 110vw;
+  --homepage-hero-section-height: 50vw;
+}
+.doorContainer.removeDoors {
+  display: none;
+}
+.midContainer {
+  width: 100%;
+  height: calc(100vh);
+  overflow-y: auto;
+  padding-top: var(--top-Layout-comp-height);
+  padding-left: var(--side-bars-layout-width);
+  padding-right: var(--side-bars-layout-width);
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  :root {
+    --top-Layout-comp-height: 18vh;
+    --side-bars-layout-width: 10.5vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  :root {
+    --hero-sections-global-height: 90vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  :root {
+    --top-Layout-comp-height: 21vh;
+    --side-bars-layout-width: 8.7vw;
+    --hero-sections-global-height: 75vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  :root {
+    --homepage-hero-section-height: 45vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  :root {
+    --top-Layout-comp-height: 26vh;
+    --side-bars-layout-width: 7.6vw;
+    --hero-sections-global-height: 70vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  :root {
+    --hero-sections-global-height: 54vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+  :root {
+    --top-Layout-comp-height: 30.6vh;
+    --side-bars-layout-width: 7.6vw;
+  }
+}

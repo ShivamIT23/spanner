@@ -1,0 +1,194 @@
+.container {
+  width: 100%;
+  max-height: 25vh;
+  height: var(--top-Layout-comp-height);
+  padding-left: var(--side-bars-layout-width);
+  padding-right: var(--side-bars-layout-width);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-color: #efefef;
+  gap: 5vw;
+}
+.logoImage {
+  width: 7vw;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  text-decoration: none;
+}
+.companyName {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #7b0000 0%, #bf4040 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.7vw;
+}
+
+.floorContainer {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floorImage {
+  width: 14vw;
+  display: block;
+}
+.floorNumber {
+  color: rgba(191, 64, 64, 0.91);
+  font-family: "Digital Numbers", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.3rem;
+  font-size: 3vw;
+  position: absolute;
+  right: 3vw;
+  top: 0.76vw;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    gap: 1.7vw;
+  }
+  .logoImage {
+    width: 6vw;
+  }
+  .logoContainer {
+    gap: 1vw;
+  }
+  .companyName {
+    font-size: 3.4vw;
+  }
+
+  .floorImage {
+    width: 14vw;
+  }
+  .floorNumber {
+    font-size: 3vw;
+    right: 3vw;
+    top: 0.76vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #efefef;
+    gap: 5vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    gap: 1vw;
+  }
+  .logoImage {
+    width: 5.5vw;
+  }
+  .logoContainer {
+    gap: 1vw;
+  }
+  .companyName {
+    font-size: 2.8vw;
+  }
+
+  .floorImage {
+    width: 12vw;
+  }
+  .floorNumber {
+    font-size: 2.7vw;
+    right: 2vw;
+    top: 0.65vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    gap: 0.8vw;
+  }
+  .logoImage {
+    width: 5vw;
+  }
+  .logoContainer {
+    gap: 1vw;
+  }
+  .companyName {
+    font-size: 2.4vw;
+  }
+
+  .floorImage {
+    width: 10vw;
+  }
+  .floorNumber {
+    font-size: 2vw;
+    right: 2vw;
+    top: 0.7vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    gap: 0.8vw;
+  }
+  .logoImage {
+    width: 4vw;
+  }
+  .logoContainer {
+    gap: 1vw;
+  }
+  .companyName {
+    font-size: 2vw;
+  }
+
+  .floorImage {
+    width: 8vw;
+  }
+  .floorNumber {
+    font-size: 1.6vw;
+    right: 1.4vw;
+    top: 0.6vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

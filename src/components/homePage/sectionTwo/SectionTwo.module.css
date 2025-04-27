@@ -1,0 +1,105 @@
+.container {
+  padding: 5vw 3vw;
+}
+.header {
+  color: #c45f5f;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 4.2vw;
+  margin-bottom: 5vw;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
+  width: 100%;
+}
+.cardsWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.card {
+  width: 45%;
+}
+.viewLink {
+  color: #545454;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.3vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vw;
+}
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .viewLink {
+    font-size: 2vw;
+    margin-top: 3vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 5vw 5vw;
+  }
+  .header {
+    font-size: 4vw;
+    margin-bottom: 5vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+  .cardsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .card{
+    width: 100%;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .viewLink {
+    font-size: 1.5vw;
+    margin-top: 3vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .cardContainer {
+    gap: 5vw;
+  }
+  .viewLink {
+    font-size: 1.2vw;
+    margin-top: 3vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding: 5vw 6vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

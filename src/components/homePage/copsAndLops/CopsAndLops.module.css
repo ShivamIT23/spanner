@@ -1,0 +1,166 @@
+.container {
+  padding: 5vw 3vw;
+}
+.header {
+  color: #c45f5f;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 1.8rem;
+  margin-bottom: 5vw;
+}
+.cardsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.card {
+  border-radius: 2vw;
+  background: #c45f5f;
+  width: 48%;
+  position: relative;
+  height: 25vw;
+  padding-top: 4vw;
+  padding-left: 8vw;
+}
+.cardImage {
+  position: absolute;
+  width: 6vw;
+  left: 1vw;
+  top: -10%;
+}
+
+.cardHeader {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2vw;
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+.item {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+  .header {
+    font-size: 4vw;
+    margin-bottom: 7vw;
+  }
+  .card {
+    height: 20vw;
+    padding-top: 4vw;
+    padding-left: 9vw;
+  }
+  .cardHeader {
+    font-size: 2.2vw;
+    margin-bottom: 1vw;
+  }
+  .cardImage {
+    position: absolute;
+    width: 6vw;
+    left: 1vw;
+    top: -20%;
+  }
+  .item {
+    font-size: 1.3vw;
+  }
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .header {
+    font-size: 4vw;
+    margin-bottom: 7vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 4vw;
+    margin-bottom: 14vw;
+  }
+  .card {
+    height: 20vw;
+    padding-top: 4vw;
+    padding-left: 12vw;
+  }
+  .cardHeader {
+    font-size: 1.9vw;
+    margin-bottom: 1vw;
+  }
+  .cardImage {
+    position: absolute;
+    width: 8vw;
+    left: 1vw;
+    top: -40%;
+  }
+  .item {
+    font-size: 1.2vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+  .header {
+    font-size: 4vw;
+    margin-bottom: 14vw;
+  }
+  .card {
+    height: 20vw;
+    padding-top: 4vw;
+    padding-left: 12vw;
+    width: 45%;
+  }
+  .cardHeader {
+    font-size: 1.9vw;
+    margin-bottom: 1vw;
+  }
+  .cardImage {
+    position: absolute;
+    width: 7.5vw;
+    left: 2vw;
+    top: -40%;
+  }
+  .item {
+    font-size: 1.2vw;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .card {
+    height: 20vw;
+    padding-top: 4vw;
+    padding-left: 12vw;
+    width: 45%;
+  }
+  .cardHeader {
+    font-size: 1.7vw;
+    margin-bottom: 1vw;
+  }
+  .cardImage {
+    position: absolute;
+    width: 7.5vw;
+    left: 2vw;
+    top: -40%;
+  }
+  .item {
+    font-size: 1.1vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}
