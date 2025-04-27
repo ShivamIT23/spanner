@@ -23,6 +23,8 @@ const LeftLayout = () => {
                   <div className={styles.imageContainer}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      width="70"
+                      height="73"
                       viewBox="0 0 70 73"
                       fill="none"
                     >
