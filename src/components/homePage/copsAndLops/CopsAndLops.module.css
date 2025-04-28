@@ -83,6 +83,7 @@
   .card{
     width: 100%;
     min-height: fit-content;
+    height: fit-content;
     padding: 10px;
     padding-left: 15vw;
   }
