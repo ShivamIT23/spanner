@@ -19,6 +19,13 @@
   background-color: #efefef;
   gap: 5vw;
 }
+.hambutton{
+  width: 15%;
+  display: flex;
+  justify-content: end;
+  border: 0;
+}
+
 .logoImage {
   width: 7vw;
 }
