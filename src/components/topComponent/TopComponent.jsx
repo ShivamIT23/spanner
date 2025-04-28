@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./TopComponent.module.css";
 import { Link } from "react-router-dom";
+import Hambutton from "../Hambutton";
 
-const TopComponent = () => {
+const TopComponent = ({isMobile}) => {
+  console.log('isMobile:', isMobile)
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -18,6 +20,9 @@ const TopComponent = () => {
             alt=""
           />
           <h4 className={styles.floorNumber}>01</h4>
+        </div>
+        <div className={styles.hambutton} >
+        {isMobile && <Hambutton />}
         </div>
       </div>
     </div>

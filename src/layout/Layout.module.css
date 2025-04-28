@@ -25,7 +25,11 @@
   padding-right: var(--side-bars-layout-width);
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 640px) {
+  .midContainer{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 }
 
 @media only screen and (min-width: 480px) {

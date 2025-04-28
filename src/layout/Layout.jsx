@@ -11,6 +11,7 @@ const Layout = () => {
   const [scrollDirection, setScrollDirection] = useState(null);
   const [arrowColor, setArrowColor] = useState("#C45F5F");
   const [showDoors, setShowDoors] = useState(true); // NEW STATE
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 
   const location = useLocation();
   const scrollRef = useRef(0);
@@ -31,6 +32,15 @@ const Layout = () => {
     scrollRef.current = currentScrollPos;
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // 👇 Whenever route (pathname) changes, trigger door animation
   useEffect(() => {
     setShowDoors(true); // show door when navigation starts
@@ -45,10 +55,15 @@ const Layout = () => {
 
   return (
     <div className={styles.container}>
-      <TopComponent />
-      <LeftLayout />
-      <RightLayout scrollDirection={scrollDirection} arrowColor={arrowColor} />
-      
+      <TopComponent isMobile={isMobile} />
+      {!isMobile && <LeftLayout />}
+      {!isMobile && (
+        <RightLayout
+          scrollDirection={scrollDirection}
+          arrowColor={arrowColor}
+        />
+      )}
+
       {/* Render DoorComponent only when showDoors is true */}
       {showDoors && (
         <div className={styles.doorContainer}>
