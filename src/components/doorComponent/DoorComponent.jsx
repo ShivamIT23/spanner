@@ -1,15 +1,31 @@
 import React, { useEffect } from "react";
 import styles from "./DoorComponent.module.css";
 
-const DoorComponent = () => {
+const DoorComponent = ({ onDoorsOpened }) => {
   useEffect(() => {
     const leftDoor = document.querySelector(`.${styles.leftDoor}`);
     const rightDoor = document.querySelector(`.${styles.rightDoor}`);
     const midBlackLineEl = document.querySelector(`.${styles.midBlackLine}`);
     const elevatorContainer = document.querySelector(`.${styles.wrapper}`);
 
-    const handleAnimationEnd = () => {
-      elevatorContainer.classList.add(styles.noBorder);
+    let leftDoorDone = false;
+    let rightDoorDone = false;
+
+    const handleAnimationEnd = (e) => {
+      if (e.target.classList.contains(styles.leftDoor)) {
+        leftDoorDone = true;
+      }
+      if (e.target.classList.contains(styles.rightDoor)) {
+        rightDoorDone = true;
+      }
+
+      // Both doors opened
+      if (leftDoorDone && rightDoorDone) {
+        elevatorContainer.classList.add(styles.noBorder);
+        if (onDoorsOpened) {
+          onDoorsOpened();  // tell parent
+        }
+      }
     };
 
     leftDoor.addEventListener("animationend", handleAnimationEnd);
@@ -25,7 +41,8 @@ const DoorComponent = () => {
       leftDoor.removeEventListener("animationend", handleAnimationEnd);
       rightDoor.removeEventListener("animationend", handleAnimationEnd);
     };
-  }, []);
+  }, [onDoorsOpened]);
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>

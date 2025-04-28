@@ -10,8 +10,9 @@ import Footer from "../components/footer/Footer";
 const Layout = () => {
   const [scrollDirection, setScrollDirection] = useState(null);
   const [arrowColor, setArrowColor] = useState("#C45F5F");
-  const location = useLocation();
+  const [showDoors, setShowDoors] = useState(true); // NEW STATE
 
+  const location = useLocation();
   const scrollRef = useRef(0);
   let scrollTimeout = null;
 
@@ -19,37 +20,41 @@ const Layout = () => {
     const currentScrollPos = event.target.scrollTop;
     const direction = currentScrollPos > scrollRef.current ? "down" : "up";
     setScrollDirection(direction);
-    setArrowColor("#13ad5c"); // Green while scrolling
+    setArrowColor("#13ad5c");
 
-    // Reset the color and scroll direction when user stops scrolling
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
-      setArrowColor("#C45F5F"); // Red when scrolling stops
-      setScrollDirection(null); // No direction when scrolling stops
+      setArrowColor("#C45F5F");
+      setScrollDirection(null);
     }, 410);
 
     scrollRef.current = currentScrollPos;
   };
 
+  // 👇 Whenever route (pathname) changes, trigger door animation
   useEffect(() => {
-    setTimeout(() => {
-      const doorComp = document.querySelector(`.${styles.doorContainer}`);
+    setShowDoors(true); // show door when navigation starts
+    document.querySelector(`.${styles.midContainer}`)?.scrollTo(0, 0); // Scroll to top
 
-      doorComp.classList.add(styles.removeDoors);
-    }, 3000);
-  }, []);
+    const timer = setTimeout(() => {
+      setShowDoors(false); // hide door after animation
+    }, 3000); // Door disappears after 3 seconds (same timing)
 
-  useEffect(() => {
-    document.querySelector(`.${styles.midContainer}`).scrollTo(0, 0);
+    return () => clearTimeout(timer);
   }, [location.pathname]);
+
   return (
     <div className={styles.container}>
       <TopComponent />
       <LeftLayout />
       <RightLayout scrollDirection={scrollDirection} arrowColor={arrowColor} />
-      <div className={styles.doorContainer}>
-        <DoorComponent />
-      </div>
+      
+      {/* Render DoorComponent only when showDoors is true */}
+      {showDoors && (
+        <div className={styles.doorContainer}>
+          <DoorComponent />
+        </div>
+      )}
 
       <div className={styles.midContainer} onScroll={handleScroll}>
         <div className={styles.outletContainer}>

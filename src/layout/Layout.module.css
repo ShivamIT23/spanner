@@ -4,6 +4,15 @@
   --hero-sections-global-height: 110vw;
   --homepage-hero-section-height: 50vw;
 }
+.doorContainer {
+  z-index: 1000;
+  position: fixed;
+  inset: 0;
+  background-color: transparent; /* or transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .doorContainer.removeDoors {
   display: none;
 }
